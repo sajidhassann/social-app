@@ -51,8 +51,8 @@ const ThePost = ({
                         ) : null}
                     </div>
                     <div className='col-10'>{content}</div>
-                    <div className='col-2'></div>
-                    <div className='col-10'>
+                    <div className='col-1'></div>
+                    <div className='col-11'>
                         <Button
                             type={rated === 1 ? 'primary' : 'default'}
                             ghost={rated === 1}
