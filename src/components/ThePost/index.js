@@ -156,6 +156,7 @@ const ThePost = ({
                                 className='w-100 h-auto'
                                 htmlType='submit'
                                 type='primary'
+                                loading={loading}
                             >
                                 Send
                             </Button>
