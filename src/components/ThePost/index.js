@@ -56,7 +56,7 @@ const ThePost = ({
                         <Button
                             type={rated === 1 ? 'primary' : 'default'}
                             ghost={rated === 1}
-                            shape='circle'
+                            // shape='circle'
                             className='border-0 mr-1'
                             icon={<FaThumbsUp className='mx-2' size={20} />}
                             onClick={onRating(1)}
@@ -66,7 +66,7 @@ const ThePost = ({
                         <Button
                             type={rated === -1 ? 'primary' : 'default'}
                             ghost={rated === -1}
-                            shape='circle'
+                            // shape='circle'
                             className='border-0 bg-transparent'
                             icon={<FaThumbsDown className='mx-2' size={20} />}
                             onClick={onRating(-1)}
