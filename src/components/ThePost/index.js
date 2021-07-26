@@ -78,7 +78,7 @@ const ThePost = ({
             </div>
             <div
                 style={{
-                    height: 450,
+                    maxHeight: 450,
                     overflow: 'auto',
                     scrollBehavior: 'smooth',
                 }}
