@@ -25,7 +25,7 @@ const ThePost = ({
         console.log('Success:', { values });
         const { message } = values;
         await comment(message);
-        ref.current?.scrollIntoView({ behvior: 'smooth' });
+        ref.current?.scrollIntoView({ behvior: 'smooth', block: 'nearest' });
         formRef.current?.resetFields();
     };
 

@@ -10,9 +10,6 @@ import PrivateRoute from './routing/PrivateRoute';
 import PublicRoute from './routing/PublicRoute';
 import setAuthToken from './utils/setAuthToken';
 
-if (localStorage.token) {
-    setAuthToken(localStorage.token);
-}
 const App = () => {
     const [token, setToken] = useState(localStorage.getItem('token'));
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')));
@@ -187,6 +184,9 @@ const App = () => {
         localStorage.removeItem('user');
     };
     useEffect(() => {
+        if (localStorage.token) {
+            setAuthToken(localStorage.token);
+        }
         if (token) {
             getAllPosts();
         }
